@@ -1,0 +1,105 @@
+/* 
+	B2Me Custom Classes
+	Table of Contents
+	- html / body
+	- Homepage sections
+	- Innerpage sections
+*/
+html
+	font-size: default-font-size;
+	-webkit-text-size-adjust: 100%;
+
+body
+	font-family: paragraph-font;
+	font-weight: 400;
+	color: default-text-color;
+	line-height: site-line-height;
+	background-color: site-background;
+	margin: 0;
+
+/* Homepage */
+.home
+	main#primary
+		max-width 100%
+		padding: 0
+
+	article,
+	.entry-content,
+	ul,
+	p
+		margin: 0
+		padding: 0
+
+	ul
+		list-style: none
+
+/* Inner Page */
+.b2-ip-banner
+	position relative
+
+	canvas
+		display: block
+		width 100%
+		min-height: 200px
+		background-image: innerpage-banner
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center
+		background-color: var(--primary-color)
+
+h1.entry-title
+	font-size: 4rem
+	text-transform: uppercase
+
+.page-template-template-sharepoint
+	main#primary
+		max-width: 1600px
+		margin: 0 auto
+		padding: 0 15px
+
+.sp-list
+	position relative
+
+	h2
+		padding: 32px
+		color: #fff
+		background-color: var(--primary-color)
+		margin-bottom: 30px
+
+	.sp-item.hidden
+		display: none
+			
+	.sp-item-files
+		display: flex
+		justify-content: flex-start
+		flex-wrap: wrap
+		margin: 0 -15px
+
+		.sp-item-files-pdf
+			width 33.33%
+			padding: 0 15px
+			margin-bottom: 30px
+
+			a
+				display: block
+				padding: 32px 16px
+				background-color: #f1f1f1
+
+				strong
+					display: inline-block
+					color: #fff
+					padding: 8px
+					background-color: #303030
+
+				h3
+					font-size: 16px
+					white-space: nowrap;
+					text-overflow: ellipsis;
+					overflow: hidden;
+
+				span
+					display: inline-block
+					color: #000
+					padding: 8px 16px
+					border: 1px solid #000
+					border-radius: 18px
